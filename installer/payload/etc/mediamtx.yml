@@ -1,0 +1,8 @@
+rtsp: yes
+rtspAddress: :8554
+hls: yes
+hlsAddress: :8888
+hlsVariant: mpegts
+hlsSegmentDuration: 2s
+paths:
+  cam1: {}

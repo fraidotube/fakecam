@@ -1,0 +1,10 @@
+[Unit]
+Description=FakeCam RTSP publisher (FFmpeg)
+After=network.target mediamtx.service
+Requires=mediamtx.service
+[Service]
+ExecStart=/usr/local/bin/fakecam-publish.sh
+Restart=always
+RestartSec=2
+[Install]
+WantedBy=multi-user.target

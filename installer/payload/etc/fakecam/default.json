@@ -1,0 +1,27 @@
+{
+  "version": "1",
+  "iface_default": "ens4",
+  "overlay": "CAM01",
+  "source": "",
+  "pattern": "testsrc",
+  "color": "red",
+  "timestamp_enabled": "on",
+  "timestamp_format": "%Y-%m-%d %H\\:%M\\:%S",
+  "nginx_port": 80,
+  "networkd_file": "[Match]\nName=en* eth*\n\n[Network]\nDHCP=yes\n",
+  "network_snapshot": {
+    "mode": "dhcp",
+    "ip": "",
+    "mask": "",
+    "gw": "",
+    "dns": [
+      "1.1.1.1",
+      "8.8.8.8"
+    ]
+  },
+  "presets": {
+    "bbb-mp4": "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4",
+    "sintel-mp4": "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/Sintel.mp4",
+    "tears-mp4": "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/TearsOfSteel.mp4"
+  }
+}
